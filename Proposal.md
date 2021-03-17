@@ -19,6 +19,6 @@ We will be using the Github API for this project. Users will be able to login to
 
 ## Experiment 1: Githup API
 
-## Experiment 2: WebRTC library
+## Experiment 2: WebRTC Library
 
 ## Application Users
