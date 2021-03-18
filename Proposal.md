@@ -24,6 +24,8 @@ The first step was making sure users would be able to use our 'login via Github'
 
 The next feature we tested with the Github API was being able to search for Github users by name. We were able to complete this part of the experiment, so that once you are logged in you can enter a user's name and will receive a list of github profiles with the associated photos. In our final application, this will be part of our friends feature, where a user can look up other people on Github and then send them a friend request. 
 
+There are still a few use cases of the API that we need to make sure are working for our project. Another idea that we had for the final application was to list each repository of a user on their page, and their friend's repositories when they go to a friend's page. This will be part of the feature that allows users to create voice channels that are associated with a specific github repo. Overall, we feel that this is at a stage where we have not implemented everything that we need, and still have a few issues to deal with, but we will be able to work with it to get everything working for the final project.
+
 ## Experiment 2: WebRTC Library
 
 ## Application Users
