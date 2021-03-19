@@ -39,6 +39,36 @@ collaborators and users can participate in.
 
 ## Persistent State Stored in the DB
 
+Other than user information, we are planning to store the
+relationship between users, which currently will be the friends
+feature. A user will be able to invite other Github users to be their
+friend, which will then send a friend request. A user can log on and
+accept the friend request, in which case the two users are now
+friends. This will be useful in the case where friends can now easily
+check each other's repositories, user information, or meeting
+activity/history. This will also allow a user check up on a friend's
+friends, which will increase the collaborative nature of the
+application.
+
+To accomplish this, we will create a join table between users and
+friends. The User table will have pertinent information about a user,
+including a user ID. The Friend table will have a requester (user ID
+of the user who send the friend request), the invitee (the user ID of
+the user who received the friend request), an active flag (to signal
+whether the friend request has been accepted or not), and additional
+created and updated timestamps.
+
+If we get time, we are also planning to implement a small user's
+recent history feature. Based on a user's recent activity, which is
+namely joining a call on Github repositories, the application should
+populate the associated table and show a list of recent repositories
+the user has participated in. This will be accomplished using a
+History table, which will have a user_id (the user ID of the user who
+this action is based on), repository (the name of the repository
+which the user has interacted with), and the timestamp (when the user
+interacted with the given repository, which will determine the order
+shown in the front end).
+
 ## Something Neat 
 
 P2P media connection between multiple clients with complex moderation and
