@@ -204,6 +204,7 @@ setting up the "something neat" for this project.
  - She clicks the project and gets connected to all the people on the
    call.
  - They discuss bug fixes on the call
+ - The call ends when everyone has left the room.
 
 #### User Story 2: Joining a call as a non-collaborator
  - Bob signs in with his Github account.
@@ -231,3 +232,22 @@ setting up the "something neat" for this project.
  - She requests to join the call and is put on the talk queue.
  - When it is her turn the admins realize that she is a well-known
    troll and remove her from the talk queue. 
+
+#### User Story 5: Joining a call as a contributer
+  - Evan signs in with his GitHub account.
+  - He is a contributer of `project-c` and sees an ongoing call.
+  - He has a question about the new feature being added and adds 
+    himself to the talk queue.
+  - His position in the queue is automatically placed before
+    non-collaborating users but behind any contributers already in
+    the queue.
+
+#### User Story 6: Accepting a talk request as a collaborator
+  - Fiona signs in with her GitHub account.
+  - She is a collaborator of `project-c` and sees an ongoing call.
+  - She joins the call.
+  - She views the queue and sees Evan, a known contributer, at the
+    front of the queue. 
+  - She clicks the "Allow" button to let Evan into the call.
+  - Evan now has the ability to talk in the call. 
+
