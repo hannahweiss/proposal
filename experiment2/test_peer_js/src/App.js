@@ -3,10 +3,10 @@ import {useState} from 'react'
 import './App.css'
 
 function Call() {
+    // List of <media streams>
     const [calls, setCalls] = useState([])
     function join_call() {
         connect().then((peers) => {
-            console.log(peers)
             join(peers, setCalls) 
         })
     }

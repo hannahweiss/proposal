@@ -5,6 +5,7 @@ const app = express();
 const server = http.createServer(app);
 const { ExpressPeerServer } = require('peer');
 const port = 4000;
+
 let users = []
 
 const peerServer = ExpressPeerServer(server, {
@@ -17,6 +18,8 @@ const peerServer = ExpressPeerServer(server, {
 // TODO: install cors middleware
 app.use(peerServer);
 
+
+// GET /connect/id
 app.get('/connect/:id', (req, res) => {
     id = req.params["id"]
     let prev = [...users]
