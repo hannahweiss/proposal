@@ -30,7 +30,12 @@ discussion on said item.
 We will be using the GitHub API for this project. Users will be
 able to login to the application using their GitHub account, and then
 we will access the repositories of each user so that they can create
-voice channels associated with their repositories.
+voice channels associated with their repositories. In addition, we
+are also using the search endpoint of Github to search for other
+users to send friend requests to as well as repositories to join
+voice channels for. Once a user is friends with another user, we will
+also use the API to fetch pertinent user information, such as
+username, email, avatar picture, and repositories. 
 
 ## Realtime Behavior 
 
