@@ -116,6 +116,16 @@ this is at a stage where we have not implemented everything that we
 need, and still have a few issues to deal with, but we will be able to
 work with it to get everything working for the final project.
 
+While working on this experiment, we learned about the advantages of
+doing Github authorization versus storing our own user passwords. The
+use of Github means that we do not need to worry about encrypting
+passwords and storing them in a database, and removes some of the
+difficulties of authentication from our app. However, dealing with
+the tokens and authorization through Github provides some of its own
+complications, and we will need to spend some time figuring out how to
+make sure users stay logged in even if they refresh the page or
+navigate away.
+
 ## Experiment 2: WebRTC Library 
 
 The second experiment we decided to run was to test how to utilize the
