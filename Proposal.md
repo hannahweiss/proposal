@@ -90,8 +90,8 @@ While working on this experiment, we learned about the advantages of
 doing Github authorization versus storing our own user passwords. The
 use of Github means that we do not need to worry about encrypting
 passwords and storing them in a database, and removes some of the
-diffficulties of authentication from our app. However, dealing with
-the tokens and authorization through Github provides some of it's own
+difficulties of authentication from our app. However, dealing with
+the tokens and authorization through Github provides some of its own
 complications, and we will need to spend some time figuring out how to
 make sure users stay logged in even if they refresh the page or
 navigate away.
